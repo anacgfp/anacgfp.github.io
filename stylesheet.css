@@ -1,6 +1,7 @@
       body {
   margin: 0;
   background-image: url("imagens/bg.png");
+  font-size:12px;
 }
   .container{
    background-color: rgba(162, 162, 240, 0.966);
@@ -12,7 +13,7 @@
   }
 
 .img-thumbnail{
-  width: 50%;
+  width: 40%;
   height: auto;
   border-radius: 25px;
   border-style: inset;
