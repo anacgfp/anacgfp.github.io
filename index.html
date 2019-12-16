@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
 
-    <title>Ana Catarina :)</title>
+  <title>Ana Catarina :)</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,14 +10,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
   <style>
       body {
   margin: 0;
-  font-family: 'Itim';
-  background-image: url("imagens/fundo2.png");
+  background-image: url("imagens/bg.png");
 }
   .container{
-   background-color: lightcyan;
+   background-color: lightsteelblue;
+
    padding: 15px;
     border: 1px solid grey;
     border:cross-fade();
@@ -26,13 +26,16 @@
   }
 
 .img-thumbnail{
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 25px;
+  border-style: inset;
 
 }
 .navbar{
   font-size:20px;
+  background-color:rgb(255, 253, 155);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
   .navbar a{
     color: white;
@@ -44,21 +47,24 @@
     background-color: lightskyblue;
   }
   h2 {
-       color:palevioletred;
+       color:darkblue;;
 }
 h3{
-  color:purple;
+  color: rgba(53, 41, 160, 0.699);
 }
 h5{
   text-align:center;
   text-decoration-color: antiquewhite;
 }
+
+
+
   </style>
 </head>
 <body>
 
-  <!-- menu de cima-->
-<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+  <!-- navbar-->
+<nav class="navbar navbar-expand-sm navbar-light">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -77,23 +83,30 @@ h5{
     </ul>
   </div>  
 </nav>
+<!-- fim navbar -->
 
 <div class="container" style="margin-top:30px">
+  <!-- perfil -->
   <div class="row">
     <div class="col-sm-4">
       <h2>Sobre mim: </h2>
       <a class="perfil" href="#">
           <img  class="img-thumbnail" src="imagens/perfil.jpg">
         </a>
-        <h5>Olá! =) Eu sou Ana, estudante de Graduação em Engenharia da Computação <br>na Universidade de Pernambuco,
-          apaixonada por tecnologia e curiosa por natureza.   </h5>   
+        <hr>
+        <p>Estudante da graduação em Engenharia da
+          Computação na UPE; 
+          Gosto de jogos online, tecnologia e animais fofinhos :)</p>
+        <hr>
       <hr class="d-sm-none">
     </div>
+    <!-- fim perfil / inicio tabs-->
+   
     <div class="col-sm-8">
 
       <h2>Formação</h2>
       <h3>Universidade de Pernambuco</h3>
-      <p>Graduação em Eng. da Computação (2016.2 - 2021.2)</p>
+      <p>Graduação em Eng. da Computação - formação prevista para 2021.1</p>
 
     <h2>Experiência</h2>
     <h3>Universidade Federal de Pernambuco</h3>
@@ -119,8 +132,10 @@ h5{
     </div>
 
     </div>
+    
+  <!-- fim tabs-->
+    </div>
   </div>
-</div>
 
 </body>
 </html>
