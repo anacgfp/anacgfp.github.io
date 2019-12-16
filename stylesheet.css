@@ -3,16 +3,16 @@
   background-image: url("imagens/bg.png");
 }
   .container{
-   background-color: lightsteelblue;
+   background-color: rgba(162, 162, 240, 0.966);
 
-   padding: 15px;
-    border: 1px solid grey;
+    padding: 15px;
+    border: 2px inset  grey;
     border:cross-fade();
     border-radius: 25px;
   }
 
 .img-thumbnail{
-  width: 80%;
+  width: 50%;
   height: auto;
   border-radius: 25px;
   border-style: inset;
@@ -33,7 +33,7 @@
     background-color: lightskyblue;
   }
   h2 {
-       color:darkblue;;
+       color:darkslateblue;
 }
 h3{
   color: rgba(53, 41, 160, 0.699);
