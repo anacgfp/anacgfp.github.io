@@ -1,36 +1,45 @@
       body {
   margin: 0;
-  font-size:12px;          
-  background-color: rgb(232,99,99);
-  transition: 0.8s;
+  background-image: url("imagens/bg.png");
+  font-size:12px;
 }
+  .container{
+   background-color: rgba(162, 162, 240, 0.966);
 
+    padding: 15px;
+    border: 2px inset  grey;
+    border:cross-fade();
+    border-radius: 25px;
+  }
+
+.img-thumbnail{
+  width: 40%;
+  height: auto;
+  border-radius: 25px;
+  border-style: inset;
+
+}
 .navbar{
-  font-size:15px;
-  background-color:rgb(255,255,255);
+  font-size:20px;
+  background-color:rgb(255, 253, 155);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
   .navbar a{
-    color: pink;
+    color: white;
     display: block;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   .navbar a:hover{
-    background-color: lightpink;
+    color: purple;
+    background-color: lightskyblue;
   }
-
-
-.h-100{
-    background-color:white;
+  h2 {
+       color:darkslateblue;
 }
-.jumbotron{
-    background-color: white; 
+h3{
+  color: rgba(53, 41, 160, 0.699);
 }
-#sobreMim{
-    border-right: 8px solid #E86363;
-}
-#experiencia{
-        border-right: 8px solid #E86363;
-}
-#habilidades{
-        border-right: 8px solid #E86363;
+h5{
+  text-align:center;
+  text-decoration-color: antiquewhite;
 }
