@@ -10,7 +10,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
@@ -37,64 +36,102 @@
 </nav>
 <!-- fim navbar -->
 
-<div class="container" style="margin-top:30px">
-  <!-- perfil -->
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>Sobre mim: </h2>
-      <a class="perfil" href="#">
-          <img  class="img-thumbnail" src="imagens/perfil.jpg">
-        </a>
-        <hr>
-        <p>Estudante da graduação em Engenharia da
-          Computação na UPE; 
-          Gosto de jogos online, tecnologia e animais fofinhos :)</p>
-          <div class =" absc">
-
-            <i class="material-icons">email</i>  <p align-self: center>anacgfp@gmail.com  </p>
-          </div>
-            
-          
-
-          
-        <hr>
-      <hr class="d-sm-none">
-    </div>
-    <!-- fim perfil-->
-   
-    <div class="col-sm-8">
-
-      <h2>Formação</h2>
-      <h3>Universidade de Pernambuco</h3>
-      <p>Graduação em Eng. da Computação - formação prevista para 2021.1</p>
-
-    <h2>Experiência</h2>
-    <h3>Universidade Federal de Pernambuco</h3>
-    <p>Estágio no Projeto Padtec (Fev 2019 - Dez 2019)
-      Trabalho de desenvolvimento e testes em Java, utilizando API's e frameworks como JPA, JAXB, IDE Eclipse
-      e controle de versões com SVN.
-    </p>
-
-    <h3>Iniciação Científica - 2018</h3>
-    <p>Bolsista PIBIC/CNPQ de iniciação científica
-        com projeto piloto sobre fatores<br>
-        relacionados ao estresse em alunos de
-        Engenharia da Computação.</p>
-    <h3>Iniciação Científica - 2018</h3>
-    <p>Seleção de Parâmetros em semiótica
-        computacional
-      </p>
-    <h2>Habilidades</h2>
-    <p>Python</span></p>    
-    <p>Java </p>    
-    <p>SQL</p>
-    <p>HTML/CSS</p>
-    </div>
-
-    </div>
-    <!-- fim-->
-    </div>
+    <!-- tudo -->
+<div class="d-flex flex-column justify-content-center" style="height: 100vh" id="tudo">
+    <div class="jumbotron jumbotron-fluid">
+  <div class="d-flex flex-row h-100 mr-2 ml-2 align-items-center" id="cima">
+        <div class="w-100" id="ana" style="text-align: right">
+      <h1>ANA </h1>
+      </div>
+        <div class="w-50" style="text-align: center" id="imagem">
+      <img class="img-fluid" src="imagens/ap.png" alt="ANA PEREIRA">
+      </div>
+        <div class="w-100" id="pereira">
+      <h1> PEREIRA</h1>
+      </div>
   </div>
+</div>
 
+
+    
+  <div class="h-100 mr-5 ml-5 align-items-center justify-content-center" id="eu">
+      
+      <div class="d-flex flex-column h-100 w-100 align-items-center">
+        <div class="h-100 w-100 align-items-center" style="text-align: center">
+            <br>
+            <img class="img-fluid" src="imagens/pessoa.png" alt="perfil" style="width:4%">
+            <br>
+          </div>
+      <div class="h-100 w-100 align-items-center pt-3">
+              <div class="d-flex">
+          <div class="flex-fill align-items-right pr-4" style="text-align: right" id="sobreMim">
+            <h4>Sobre Mim:</h4>
+            <p>Gosto de jogos online,<br> tecnologia e animais.</p>
+              </div>
+                  <div class="flex-fill pl-4">
+                          <h4>Contato:</h4>
+                    <p>81 9 9757 8901 <br> anacgfp.github.io <br> anacgfp@gmail.com</p> 
+                  </div>
+            </div>
+        </div>
+    </div>      
+</div>    
+  <div class="h-100 mr-5 ml-5 align-items-center" id="exp">      
+      <div class="d-flex flex-column h-100 w-100 align-items-center align-content-center">
+        <div class="h-100 w-100 align-items-center align-content-center" style="text-align: center">
+            <br>
+            <img class="img-fluid" src="imagens/mala.png" alt="mala" style="width:4%">
+            <br>
+          </div>
+      <div class="h-100 w-100 align-items-center align-content-center pt-3">
+              <div class="d-flex">
+          <div class="flex-fill align-items-right align-content-center pr-4" style="text-align: right" id="experiencia">
+            <h4>Experiência</h4>
+            <h5>Universidade Federal de Pernambuco •<br>
+Fev/2019 - Dez/2019</h5>
+              <p>
+              Estagiária P&D no laboratório de Redes<br>
+Ópticas - utilizando Java, Eclipse,
+MySQL , JAXB e JPA.</p>
+              </div>
+                  <div class="flex-fill pl-4">
+                          <h4>Formação:</h4>
+                    <h5>Universidade de Pernambuco • 2016.2 -<br>Atual</h5> 
+        <p>Graduação em Engenharia da<br>
+Computação. Formação prevista para<br>
+2021.1</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+      
+    </div>
+    
+
+    
+    <!--ultimo-->
+  <div class="h-100 mr-5 ml-5 align-items-center">
+      
+      <div class="d-flex flex-column h-100 w-100 align-items-center">
+        <div class="h-50 w-100 align-items-center" style="text-align: center">
+            <br>
+            <img class="img-fluid" src="imagens/lampada.png" alt="perfil" style="width:4%">
+          </div>
+      <div class="h-100 w-100 align-items-center pt-3">
+              <div class="d-flex">
+          <div class="flex-fill align-items-right pr-4" style="text-align: right" id="habilidades">
+            <h4>Habilidades:</h4>
+              <p>Java, Python <br> HTML, CSS, JS <br> Inglês <br> SQL, MySQL <br></p>
+              </div>
+                  <div class="flex-fill pl-4">
+                          <h4>Interesses</h4>
+                      <p>Internet <br>Tecnologia<br>Inteligência Artificial<br>Desenvolvimento.
+                      </p>
+                  </div>
+            </div>
+        </div>
+    </div>      
+</div>
+</div>    
 </body>
 </html>
