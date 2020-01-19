@@ -1,45 +1,28 @@
-      body {
-  margin: 0;
-  background-image: url("imagens/bg.png");
-  font-size:12px;
+body {
+    font-family: 'Monda';
 }
-  .container{
-   background-color: rgba(162, 162, 240, 0.966);
+#_eu{    height: 100vh;
+    width:100vh;
+  background-image: linear-gradient(to bottom right, darkblue,lightblue);
 
-    padding: 15px;
-    border: 2px inset  grey;
-    border:cross-fade();
-    border-radius: 25px;
-  }
-
-.img-thumbnail{
-  width: 40%;
-  height: auto;
-  border-radius: 25px;
-  border-style: inset;
 
 }
-.navbar{
-  font-size:20px;
-  background-color:rgb(255, 253, 155);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
+
   .navbar a{
-    color: white;
+    color: pink;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   .navbar a:hover{
-    color: purple;
-    background-color: lightskyblue;
+    background-color: lightcyan;
   }
-  h2 {
-       color:darkslateblue;
+.img-thumbnail {
+    width: 40%;
+    height: auto;
+    border-radius: 25px;
 }
-h3{
-  color: rgba(53, 41, 160, 0.699);
-}
-h5{
-  text-align:center;
-  text-decoration-color: antiquewhite;
-}
+  /* Make the image fully responsive */
+  .carousel-inner {
+      width: 100%;
+      height: 100%;
+  }
