@@ -10,15 +10,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
 <body>
   <!-- navbar-->
-<nav class="navbar navbar-expand-sm navbar-light bg-info fixed-top ">
+<nav class="navbar navbar-expand-sm navbar-light bg-info ">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -39,7 +36,7 @@
 </nav>
 <!-- fim navbar -->
 <!-- tela 1 -->
-    <div data-aos="fade-down" class="w-100 align-items-center d-flex justify-content-center" style="height: 100vh;" id="_eu">
+    <div class="w-100 align-items-center d-flex justify-content-center" style="height: 100vh;" id="_eu">
         <div>
             <div class="d-inline-flex align-content-center align-items-center text-white">
               <div class="pl-3"><h1>Olá, eu sou Ana! </h1></div>
@@ -50,10 +47,10 @@
     </div>
 <!--fim tela1 -->
 <!-- tela 2-->
-    <div data-aos="fade-left" class="w-100" style="height: 100vh; background-color:lightblue;">
-        <div class="row w-100">
+    <div data-aos="fade-left" class="w-100 align-items-center d-flex justify-content-center" style="height: 100vh; background-color:lightblue;">
+        <div class="row w-100 d-flex justify-content-center" style="background-color:lightblue;">
             <!--perfil-->
-            <div class="col-sm-3">
+            <div class="col-sm-3" >
                 <img class="img-thumbnail" src="imagens/perfil.jpg">
                 <hr>
                 <p class="ml-2">Olá, eu me chamo Ana Catarina Pereira.</p>
@@ -68,65 +65,63 @@
                 <hr>
             </div>
             <!--fim perfil / inicio curriculo-->
-            <div id="demo" class="col-sm-9 carousel slide d-flex justify-content-center" data-ride="carousel">
-
-
-
-              <!-- The slideshow -->
-              <div class="carousel-inner">
-                <div class="carousel-item active mx-auto">
-                  
-                <div class="w-50 align-content-center align-items-center" id="_formacao">
-                    <h3 class="ml-2 font-weight-bold">Formação:</h3>
-                    <h5 class="ml-3 font-weight-bold">UNIVERSIDADE DE PERNAMBUCO - POLI/UPE<h5>
-                    <p class="ml-4">Graduação em Eng. da Computação - Previsão de formação: 2021.1</p>
-                        <p class="ml-3 font-weight-bold">INICIAÇÃO CIENTÍFICA - 2018</p>
-                        <p class="ml-4 ">Bolsista PIBIC/CNPQ de iniciação científica com projeto piloto sobre fatores relacionados ao estresse em alunos de Engenharia da Computação</p>
-                        <p class="ml-3 font-weight-bold">INICIAÇÃO CIENTÍFICA - 2018</p>
-                        <p class="ml-4">Seleção de Parâmetros em semiótica computacional</p>
-                </div>
-                </div>
-                <div class="carousel-item mx-auto">
-                <div class="w-50" id="_exp">
-                    <h3 class="ml-2 font-weight-bold">Experiência</h3>
-                    <h5 class="ml-3 font-weight-bold">UNIVERSIDADE FEDERAL DE PERNAMBUCO - UFPE<h5>
-                    <p class="ml-4">Estágio no Laboratório de Redes Ópticas @Projeto PADTEC - UFPE - Software planejador de Redes Ópticas (Fev 2019 - Dez 2019) - Atuei no desenvolvimento e testes, utilizando JAVA, MySQL, JPA e JAXB.</p> 
-                    <h3 class="ml-2 font-weight-bold">Eventos:</h3>
-                        <p>
-                        <ul class="ml-4">
-                            <li>Talk a Bit - 2018</li>
-                            <li>Workshop on Requirements Engineering - WER 2018</li>
-                            <li>III Workshop de Mineração de Dados - 2018</li>
-                        </ul>
-                        </p>
-                </div>
-                </div>
-              </div>
-
-              <!-- Left and right controls -->
-              <a class="carousel-control-prev " href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </a>
-               <!-- Indicators -->
-              <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
+            <div class="col-sm-9">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">Formação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="exp-tab" data-toggle="tab" href="#exp" role="tab" aria-controls="exp" aria-selected="false">Experiência</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="evhab-tab" data-toggle="tab" href="#evhab" role="tab" aria-controls="evhab" aria-selected="false">Eventos e Habilidades</a>
+                </li>
               </ul>
+              <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="form" role="tabpanel" aria-labelledby="form-tab">
+                          <br>
+                                    <h3 class="ml-2 font-weight-bold">Formação: </h3>
+                                    <h5 class="ml-3 font-weight-bold">UNIVERSIDADE DE PERNAMBUCO - POLI/UPE<h5>
+                                    <p class="ml-4">Graduação em Eng. da Computação - Previsão de formação: 2021.1</p>
+                                        <p class="ml-3 font-weight-bold">INICIAÇÃO CIENTÍFICA - 2018</p>
+                                        <p class="ml-4 ">Bolsista PIBIC/CNPQ de iniciação científica com projeto piloto sobre fatores relacionados ao estresse em alunos de Engenharia da Computação</p>
+                                        <p class="ml-3 font-weight-bold">INICIAÇÃO CIENTÍFICA - 2018</p>
+                                        <p class="ml-4">Seleção de Parâmetros em semiótica computacional</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="exp" role="tabpanel" aria-labelledby="exp-tab">
+                          <br>
+                                        <h3 class="ml-2 font-weight-bold">Experiência: </h3>
+                                        <h5 class="ml-3 font-weight-bold">UNIVERSIDADE FEDERAL DE PERNAMBUCO - UFPE<h5>
+                                        <p class="ml-4">Estágio no Laboratório de Redes Ópticas @Projeto PADTEC - UFPE - Software planejador de Redes Ópticas (Fev 2019 - Dez 2019) - Atuei no desenvolvimento e testes, utilizando JAVA, MySQL, JPA e JAXB.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="evhab" role="tabpanel" aria-labelledby="evhab-tab">
+                            <br> 
+                                    <h3 class="ml-2 font-weight-bold">Eventos:</h3>
+                                        <p>
+                                        <ul class="ml-4">
+                                            <li>Talk a Bit - 2018</li>
+                                            <li>Workshop on Requirements Engineering - WER 2018</li>
+                                            <li>III Workshop de Mineração de Dados - 2018</li>
+                                        </ul>
+                                        </p>
+                                    <br>
+                                    <h3 class="ml-2 font-weight-bold">Habilidades:</h3>
+                                        <p>
+                                        <ul class="ml-4">
+                                            <li>Programação em Java, Python - com alguma experiência em C e Haskell</li>
+                                            <li>HTML, CSS, JS</li>
+                                            <li>SQL/MySQL</li>
+                                        </ul>
+                                        </p>
+                        </div>
+                    </div>
             </div>
-        
         </div>
     </div>
+</div>
 <!-- fim tela 2-->
-<script>
-function myFunction() {
-  document.getElementById("_eu").onscroll.$animate.move() .style.transition = "all 2s";     // Standard syntax
-}
-</script>
-    <script>
-  AOS.init();
-</script>            
+
 </body>
 </html>
