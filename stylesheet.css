@@ -37,6 +37,7 @@ html {
 .photograph {
     display: flex;
     justify-content: center;
+    padding-top: 1vw;
 }
 .profile {
     background-color: #FFCDEF;
